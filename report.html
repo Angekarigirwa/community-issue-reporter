@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report an Issue</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Report a Community Issue</h1>
+    <p>Help improve your community by reporting a problem</p>
+  </header>
+
+  <main class="container">
+    <form id="issueForm" class="form">
+      <label>
+        Issue Title
+        <input type="text" id="title" required />
+      </label>
+
+      <label>
+        Description
+        <textarea id="description" required></textarea>
+      </label>
+
+      <label>
+        Category
+        <select id="category" required>
+          <option value="">Select category</option>
+          <option>Road</option>
+          <option>Water</option>
+          <option>Electricity</option>
+          <option>Waste</option>
+          <option>Public Safety</option>
+          <option>Other</option>
+        </select>
+      </label>
+
+      <label>
+        Location
+        <input type="text" id="location" required />
+      </label>
+
+      <button type="submit" class="btn">Submit Issue</button>
+    </form>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
